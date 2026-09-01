@@ -53,11 +53,89 @@ Note: Throughout this guide, commands shown inside code blocks should be typed d
    ```
    java --version
    ```
-Press Enter
+&emsp; Press Enter
 
-If Java is installed, the Terminal should display information about the Java version installed on your computer. Next, check that the Java compiler is also available by typing:
+&emsp; If Java is installed, the Terminal should display information about the Java version installed on your 
+
+&emsp; computer. Next, check that the Java compiler is also available by typing:
+
    ```
    java --version
    ```
-2. Install Java if needed
-3. 
+&emsp; Press Enter.
+
+&emsp; If both commands display version information, Java is installed and you can continue to step 3.
+
+2. Install Java if needed.
+If Terminal does not recognize the java or javac command, Java or the required Java Development Kit (JDK) may not be installed.
+Follow the Java installation instructions provided here:
+
+&emsp; https://www.cs.uakron.edu/~xiao/isp/JavaOnMacOS.html
+
+&emsp; Follow the instructions on the linked page to install Java.
+
+&emsp; Once you are finished, do not assume the installation worked. Check it again by closing and reopening
+
+&emsp; Terminal, then repeating step 1
+
+3. Download the Internship Tracker
+The complete project is provided as a ZIP file in the main GitHub repository.
+Download: Internship_Tracker.zip
+
+&emsp; The file can be found here:
+
+&emsp; https://github.com/cndekelengwe/Java-Internship-Tracker/blob/main/Internship_Tracker.zip
+
+&emsp; Save the ZIP file somewhere that can be easily located, such as the Downloads or Desktop folder.
+
+4. Extract the ZIP file. Double-click the ZIP file to extract its contents.
+After extraction, open the resulting Internship_Tracker folder.
+The Java source files needed to run the program should be located inside this folder.
+
+5. Open the Project Folder in Terminal
+
+&emsp; Open Terminal and navigate to the extracted Internship_Tracker folder using the cd command.
+
+&emsp; For example, if the folder is on your Desktop:
+
+   ```
+   cd ~/Desktop/Internship_Tracker
+   ```
+
+&emsp; If the folder is in Downloads:
+
+   ```
+   cd ~/Downloads/Internship_Tracker
+   ```
+
+&emsp; You can check that you are in the correct folder by typing:
+
+   ```
+   ls
+   ```
+
+&emsp; The project files should appear in the Terminal.
+
+6. Compile the Internship Tracker
+Once you are inside the folder containing the Java source files, compile the program by typing:
+
+   ```
+   javac Internship.java InternshipTracker.java InternshipTrackerManagement.java
+   ```
+
+&emsp; Press Enter.
+
+&emsp; If the command completes without displaying an error, the program compiled successfully.
+
+7. Run the Internship Tracker
+After the program has successfully compiled, type:
+
+   ```
+   java InternshipTrackerManagement
+   ```
+
+&emsp; Press Enter.
+
+&emsp; The Internship Tracker should start and display its opening menu in the Terminal. If you see the Internship 
+
+&emsp; Tracker menu, the setup was successful, and the program is ready to use.
